@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #456573;
+}
+
+.nav-button {
+  @apply p-4 font-mono transition-all ease-in-out duration-700 text-white hover:bg-[#62929E] hover:font-bold active:scale-125;
+}
+
+.swiper-button-next {
+  color: #62929E!important;
+  display: none;
+}
+
+.swiper-button-prev {
+  color: #62929E !important;
+  display: none;
+  
+}
+.swiper-button-prev:hover {
+  display: block;
+}
+.swiper-button-prev:hover {
+  display: block;
+}
