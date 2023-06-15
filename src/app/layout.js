@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { useEffect } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
