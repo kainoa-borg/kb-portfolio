@@ -7,14 +7,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out -t true",
+    "postdeploy": "git push --follow-tags"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
     "eslint": "8.42.0",
     "eslint-config-next": "13.4.5",
     "gh-pages": "^5.0.0",
-    "next": "^13.2.3",
+    "next": "^13.4.5",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
