@@ -3,6 +3,7 @@
 import React from "react";
 import { useState, useRef } from "react";
 import emailjs from '@emailjs/browser';
+import {FaSpinner} from 'react-icons/fa'
 
 export default function ContactPage() {
 
@@ -14,6 +15,7 @@ export default function ContactPage() {
     });
 
     const [confirmSubmitOpen, setConfirmSubmitOpen] = useState(false);
+    const [sendingIcon, setSendingIcon] = useState(false);
 
     const handleFormChange = (event) => {
         let eName = event.target.name;
@@ -34,12 +36,15 @@ export default function ContactPage() {
     const sendEmail = (e) => {
         e.preventDefault();
 
+        setSendingIcon(true);
+
         emailjs.init('ZGFTYyttQbN2yqDK9');
 
         emailjs.send('service_g5pjord', 'template_ybc25ic', formData)
         .then((result) => {
             console.log(result.text);
             setConfirmSubmitOpen(true);
+            setSendingIcon(false);
             setTimeout(() => {
                 setConfirmSubmitOpen(false);
             }, 4000);
@@ -51,6 +56,7 @@ export default function ContactPage() {
             })
         }, (error) => {
             console.log(error.text);
+            setSendingIcon(false);
         });
     }
 
@@ -90,7 +96,13 @@ export default function ContactPage() {
                             <label htmlFor='message' className="block text-white font-mono">Message:</label>
                             <textarea id='message' name='message' value={formData.message} onChange={handleFormChange} required placeholder="Message contents" rows='4' cols='50' className="w-[100%] p-2 rounded-xl"></textarea>
                         </div>
-                        <button type='submit' className="p-4 bg-white mt-4 mx-auto rounded-xl w-[25%] text-slate-800 font-bold font-mono">Submit</button>
+                        <button type='submit' className="p-4 px-20 bg-white mt-4 mx-auto rounded-xl w-[25% transition-all ease-in-out duration-700">
+                            {   sendingIcon ?
+                                <FaSpinner className="animate-spin"/>
+                                :
+                                <p className="text-slate-800 font-bold font-mono">Submit</p>
+                            }
+                        </button>
                     </form>
                 </div>
             </div>
