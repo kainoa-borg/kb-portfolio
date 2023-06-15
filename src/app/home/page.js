@@ -12,10 +12,10 @@ import { Navigation, Autoplay } from 'swiper';
 
 export default function Home() {
   
-  const andreaSitePreview = require('../images/andrea-site-preview.png');
-  const foodForwardPreview = require('../images/food-forward-preview.png');
-  const hackerNewsClonePreview = require('../images/hacker-news-clone-preview.png');
-  const raytracerPreview = require('../images/ray-tracer-preview.png');
+  const andreaSitePreview = require('../../images/andrea-site-preview.png');
+  const foodForwardPreview = require('../../images/food-forward-preview.png');
+  const hackerNewsClonePreview = require('../../images/hacker-news-clone-preview.png');
+  const raytracerPreview = require('../../images/ray-tracer-preview.png');
 
   return (
   // main div
