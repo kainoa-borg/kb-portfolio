@@ -25,7 +25,7 @@ export default function ProjectsPage() {
                     <div className='absolute flex flex-col backdrop-blur-xl p-1 items-center justify-center lg:h-[30%] h-[40%] lg:w-1/3 w-[100%] top-[80%] right-[50%] translate-x-[50%] translate-y-[-50%] bg-[#456573]/70'>
                         <h2 className='text-3xl text-center text-white font-mono'>Andrea Vancea Portfolio Site</h2>
                         <h2 className='text-xl text-center text-white font-mono'>Artist portfolio with custom styling</h2>
-                        <Link className='p-4 mt-1 w-1/3 text-center text-white hover:bg-[#62929E] font-mono' href='https://kainoa-borg.github.io/andrea-site/'>Explore</Link>
+                        <Link className='p-4 mt-1 w-1/3 text-center text-white hover:bg-[#62929E] font-mono' href='https://kainoa-borg.github.io/andrea-site'>Explore</Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -41,7 +41,7 @@ export default function ProjectsPage() {
                     <div className='absolute flex flex-col backdrop-blur-xl p-1 items-center justify-center lg:h-[30%] h-[40%] lg:w-1/3 w-[100%] top-[80%] right-[50%] translate-x-[50%] translate-y-[-50%] bg-[#456573]/70'>
                         <h2 className='text-3xl z-10 text-center text-white font-mono'>Hacker News Clone</h2>
                         <h2 className='text-xl z-10 text-center text-white font-mono'>Functional clone of popular tech news site</h2>
-                        <Link className='p-4 mt-1 w-1/3 text-center text-white hover:bg-[#62929E] font-mono' href='https://kainoa-borg.github.io/hacker-news-clone/'>Explore</Link>
+                        <Link className='p-4 mt-1 w-1/3 text-center text-white hover:bg-[#62929E] font-mono' href='https://kainoa-borg.github.io/hacker-news-clone'>Explore</Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
