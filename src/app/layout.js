@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         {/* Navbar Div */}
         <div className='absolute z-10 w-1/2 h-12 items-center bg-[#456573]'>
             <ul className='flex ml-8'>
-              <li><a href='/'><button className='nav-button'>Home</button></a></li>
+              <li><a href='/kb-portfolio'><button className='nav-button'>Home</button></a></li>
               <li><Link href='/projects'><button className='nav-button'>Projects</button></Link></li>
               <li><Link href='/contact'><button className='nav-button'>Contact</button></Link></li>
             </ul>
