@@ -19,7 +19,6 @@ export default function ProjectsPage() {
 
     return (
         <div className='flex pt-[8vh] h-[92vh]'>
-            {/* Navbar Div */}
             <Swiper navigation={true} modules={[Navigation, Autoplay]} loop={true} autoplay={{delay: 5000, disableOnInteraction: true}}>
                 <SwiperSlide className='relative w-[100%]'>
                     <Image className='object-cover object-top lg:h-[100%] h-[60%] w-[100%]' src={andreaSitePreview}></Image>
