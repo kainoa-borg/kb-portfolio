@@ -12,6 +12,13 @@ const inter = Inter({ subsets: ['latin'] })
 // }
 
 export default function RootLayout({ children }) {
+
+  useEffect(() => {
+    if (window.location === 'https://kainoa-borg.github.io/kb-portfolio.txt') {
+      redirect('https://kainoa-borg.github.io/kb-portfolio');
+    }
+  },[])
+
   return (
     <html lang="en">
       <head>
