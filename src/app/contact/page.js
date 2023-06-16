@@ -107,11 +107,11 @@ export default function ContactPage() {
                 </div>
             </div>
         {/* right contact info */}
-            <div className="w-[100] bg-white lg:rounded-3xl lg:w-[50%] lg:m-auto z-5">
+            <div className="w-[100] bg-white lg:rounded-3xl lg:m-auto z-5">
                 {/* Info Container */}
                 <div className="p-4 lg:p-8 h-[50vh] lg:h-[100%] w-[90%] m-auto z-6">
-                    <h1 className="text-2xl px-4 mb-4 lg:mb-10 text-slate-900 text-center font-bold font-mono">Or contact me via:</h1>
-                    <div className="flex flex-col justify-between mt-2 px-4 h-[30%]">
+                    <h1 className="text-2xl px-4 mb-4 lg:mb-4 text-slate-900 text-center font-bold font-mono">Or contact me via:</h1>
+                    <div className="flex flex-col justify-between mt-2 h-[30%]">
                         <h4 className="xl:text-3xl text-xl text-slate-800 font-mono">phone: 808-722-3642</h4>
                         <h4 className="xl:text-3xl text-xl text-slate-800 font-mono">email: kainoa.accs@gmail.com</h4>
                         <h4 className="xl:text-3xl text-xl text-slate-800 font-mono">github: kainoa-borg</h4>
