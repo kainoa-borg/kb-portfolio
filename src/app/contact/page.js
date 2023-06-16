@@ -62,11 +62,11 @@ export default function ContactPage() {
 
     return (
         // container
-        <div className="grid lg:grid-cols-2 gird-cols-1 pt-[8vh] h-[92vh]">
+        <div className="grid lg:grid-cols-2 gird-cols-1 xl:pt-[8vh] xl:h-[92vh] pt-[4vh]">
         {/* left contact form */}
-            <div className="flex w-[100% z-5">
+            <div className="w-[100%] my-auto z-5">
                 {/* Form container */}
-                <div className="p-4 w-[90%] lg:h-[66%] h-[80%] m-auto z-6">
+                <div className="px-4 pb-4 w-[90%] lg:h-[66%] h-[80%] xl:m-auto mx-auto mt-8 mb-8 z-6">
                     <div className="flex relative">
                         <h3 className="text-2xl text-white px-4 font-bold font-mono">Shoot me a message!</h3>
                         <div 
@@ -107,14 +107,14 @@ export default function ContactPage() {
                 </div>
             </div>
         {/* right contact info */}
-            <div className="flex w-[100] bg-white lg:rounded-l-3xl z-5">
+            <div className="w-[100] bg-white lg:rounded-3xl lg:w-[50%] lg:m-auto z-5">
                 {/* Info Container */}
-                <div className="p-4 w-[90%] h-[66%] m-auto z-6">
-                    <h1 className="text-2xl px-4 text-slate-900 font-bold font-mono">Or contact me via:</h1>
-                    <div className="flex flex-col justify-between mt-10 px-4 h-[30%]">
-                        <h4 className="xl:text-3xl text-2xl text-slate-800 font-mono">phone: 808-722-3642</h4>
-                        <h4 className="xl:text-3xl text-2xl text-slate-800 font-mono">email: kainoa.accs@gmail.com</h4>
-                        <h4 className="xl:text-3xl text-2xl text-slate-800 font-mono">github: kainoa-borg</h4>
+                <div className="p-4 lg:p-8 h-[50vh] lg:h-[100%] w-[90%] m-auto z-6">
+                    <h1 className="text-2xl px-4 mb-10 text-slate-900 text-center font-bold font-mono">Or contact me via:</h1>
+                    <div className="flex flex-col justify-between mt-2 px-4 h-[30%]">
+                        <h4 className="xl:text-3xl text-xl text-slate-800 font-mono">phone: 808-722-3642</h4>
+                        <h4 className="xl:text-3xl text-xl text-slate-800 font-mono">email: kainoa.accs@gmail.com</h4>
+                        <h4 className="xl:text-3xl text-xl text-slate-800 font-mono">github: kainoa-borg</h4>
                     </div>
                 </div>
             </div>

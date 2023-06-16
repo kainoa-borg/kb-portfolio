@@ -21,34 +21,34 @@ export default function ProjectsPage() {
             <Swiper navigation={true} modules={[Navigation, Autoplay]} loop={true} autoplay={{delay: 5000, disableOnInteraction: true}}>
                 <SwiperSlide className='relative w-[100%]'>
                     <Image className='object-cover object-top lg:h-[100%] h-[60%] w-[100%]' src={andreaSitePreview}></Image>
-                    <div className='absolute flex flex-col backdrop-blur-xl p-1 items-center justify-center lg:h-[30%] h-[40%] md:px-10 top-[80%] right-[50%] translate-x-[50%] translate-y-[-50%] bg-[#456573]/70'>
-                        <h2 className='text-3xl font-bold text-center text-white font-mono'>Andrea Vancea Portfolio Site</h2>
-                        <h2 className='text-xl text-center text-white font-mono'>Artist portfolio with custom styling</h2>
-                        <a className='p-4 mt-1 w-1/3 text-center text-white hover:bg-[#62929E] font-mono transition ease-in-out' href='https://kainoa-borg.github.io/andrea-site'>Explore</a>
+                    <div className='absolute flex flex-col lg:backdrop-blur-xl p-1 items-center justify-center lg:h-[30%] h-[40%] lg:w-[30%] w-[80%] md:px-10 top-[80%] right-[50%] translate-x-[50%] translate-y-[-50%] lg:bg-[#456573]/70'>
+                        <h2 className='text-2xl font-bold text-center text-white font-mono'>Andrea Vancea Portfolio Site</h2>
+                        <h2 className='text-l text-center text-white font-mono'>Artist portfolio with custom styling</h2>
+                        <a className='p-4 mt-3 mx-auto text-center text-white bg-[#749FAA]/50 hover:bg-[#749FAA] font-mono transition ease-in-out' href='https://kainoa-borg.github.io/andrea-site'>Explore</a>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image className='object-cover object-left-top lg:h-[100%] h-[60%] w-[100%]' src={foodForwardPreview}></Image>
-                    <div className='absolute flex flex-col backdrop-blur-xl p-1 items-center justify-center lg:h-[30%] h-[40%] md:px-10 top-[80%] right-[50%] translate-x-[50%] translate-y-[-50%] bg-[#456573]/70'>
-                        <h2 className='text-3xl font-bold z-10 text-center text-white font-mono'>Food Forward Tracker</h2>
-                        <h2 className='text-xl z-10 text-center text-white font-mono'>Full-featured management software for a meal-planning company</h2>
-                        <a className='p-4 mt-1 w-1/3 text-center text-white hover:bg-[#62929E] font-mono transition ease-in-out' href='https://github.com/FoodDesertDatabase/FoodForwardTracker/'>View on Github</a>
+                    <div className='absolute flex flex-col lg:backdrop-blur-xl p-1 items-center justify-center lg:h-[30%] h-[40%] lg:w-[30%] w-[80%] md:px-10 top-[80%] right-[50%] translate-x-[50%] translate-y-[-50%] lg:bg-[#456573]/70'>
+                        <h2 className='text-2xl font-bold z-10 text-center text-white font-mono'>Food Forward Tracker</h2>
+                        <h2 className='text-l z-10 text-center text-white font-mono'>Full-featured management software for a meal-planning company</h2>
+                        <a className='p-4 mt-3 mx-auto text-center text-white bg-[#749FAA]/50 hover:bg-[#62929E] font-mono transition ease-in-out' href='https://github.com/FoodDesertDatabase/FoodForwardTracker/'>View on Github</a>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image className='object-cover object-left-top lg:h-[100%] h-[60%] w-[100%]' src={hackerNewsClonePreview}></Image>
-                    <div className='absolute flex flex-col backdrop-blur-xl p-1 items-center justify-center lg:h-[30%] h-[40%] md:px-10 top-[80%] right-[50%] translate-x-[50%] translate-y-[-50%] bg-[#456573]/70'>
-                        <h2 className='text-3xl font-bold z-10 text-center text-white font-mono'>Hacker News Clone</h2>
-                        <h2 className='text-xl z-10 text-center text-white font-mono'>Functional clone of popular tech news site</h2>
-                        <a className='p-4 mt-1 w-1/3 text-center text-white hover:bg-[#62929E] font-mono transition ease-in-out' href='https://kainoa-borg.github.io/hacker-news-clone'>Explore</a>
+                    <div className='absolute flex flex-col lg:backdrop-blur-xl p-1 items-center justify-center lg:h-[30%] h-[40%] lg:w-[30%] w-[80%] md:px-10 top-[80%] right-[50%] translate-x-[50%] translate-y-[-50%] lg:bg-[#456573]/70'>
+                        <h2 className='text-2xl font-bold z-10 text-center text-white font-mono'>Hacker News Clone</h2>
+                        <h2 className='text-l z-10 text-center text-white font-mono'>Functional clone of popular tech news site</h2>
+                        <a className='p-4 mt-3 mx-auto text-center text-white bg-[#749FAA]/50 hover:bg-[#62929E] font-mono transition ease-in-out' href='https://kainoa-borg.github.io/hacker-news-clone'>Explore</a>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <Image className='object-cover object-top lg:h-[100%] h-[60%] w-[100%]' src={raytracerPreview}></Image>
-                    <div className='absolute flex flex-col backdrop-blur-xl p-1 items-center justify-center lg:h-[30%] h-[40%] md:px-10 top-[80%] right-[50%] translate-x-[50%] translate-y-[-50%] bg-[#456573]/70'>
-                        <h2 className='text-3xl font-bold z-10 text-center text-white font-mono'>Multi-Threaded Raytracing Project</h2>
-                        <h2 className='text-xl z-10 text-center text-white font-mono'>CPU-parallel raytracer built with C++</h2>
-                        <a className='p-4 mt-1 w-1/3 text-center text-white hover:bg-[#62929E] font-mono transition ease-in-out' href='https://github.com/kainoa-borg/Simple-Multithreaded-Raytracer'>View on Github</a>
+                    <div className='absolute flex flex-col lg:backdrop-blur-xl p-1 items-center justify-center lg:h-[30%] h-[40%] lg:w-[30%] w-[80%] md:px-10 top-[80%] right-[50%] translate-x-[50%] translate-y-[-50%] lg:bg-[#456573]/70'>
+                        <h2 className='text-2xl font-bold z-10 text-center text-white font-mono'>Multi-Threaded Raytracing Project</h2>
+                        <h2 className='text-l z-10 text-center text-white font-mono'>CPU-parallel raytracer built with C++</h2>
+                        <a className='p-4 mt-3 mx-auto text-center text-white bg-[#749FAA]/50 hover:bg-[#62929E] font-mono transition ease-in-out' href='https://github.com/kainoa-borg/Simple-Multithreaded-Raytracer'>View on Github</a>
                     </div>
                 </SwiperSlide>
             </Swiper>
