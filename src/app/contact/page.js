@@ -81,8 +81,8 @@ export default function ContactPage() {
                     </div>
                     <form ref={form} onSubmit={sendEmail} className="pt-4 flex flex-col justify-between lg:h-[80%] h-[90%] w-[100%]">
                         <div className="px-4">
-                            <label htmlFor='first-name' className="block text-white font-mono">First Name:</label>
-                            <input id='first-name' name='from_name' value={formData.from_name} onChange={handleFormChange} required placeholder='Enter your name' type='text' className="w-[100%] p-2 rounded-xl"></input>
+                            <label htmlFor='name' className="block text-white font-mono">Name:</label>
+                            <input id='name' name='from_name' value={formData.from_name} onChange={handleFormChange} required placeholder='Enter your name' type='text' className="w-[100%] p-2 rounded-xl"></input>
                         </div>
                         <div className="px-4 pt-1">
                             <label htmlFor='email-address' className="block text-white font-mono">Email Address:</label>
