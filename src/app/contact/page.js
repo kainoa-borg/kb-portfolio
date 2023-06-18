@@ -82,21 +82,21 @@ export default function ContactPage() {
                     <form ref={form} onSubmit={sendEmail} className="pt-4 flex flex-col justify-between lg:h-[80%] h-[90%] w-[100%]">
                         <div className="px-4">
                             <label htmlFor='name' className="block text-white font-mono">Name:</label>
-                            <input id='name' name='from_name' value={formData.from_name} onChange={handleFormChange} required placeholder='Enter your name' type='text' className="w-[100%] p-2 rounded-xl"></input>
+                            <input id='name' name='from_name' value={formData.from_name} onChange={handleFormChange} required placeholder='Enter your name' type='text' className="w-[100%] p-2"></input>
                         </div>
                         <div className="px-4 pt-1">
                             <label htmlFor='email-address' className="block text-white font-mono">Email Address:</label>
-                            <input id='email-address' name='user_email' value={formData.user_email} onChange={handleFormChange} required placeholder="Enter your email" type='email' className="w-[100%] p-2 rounded-xl"></input>
+                            <input id='email-address' name='user_email' value={formData.user_email} onChange={handleFormChange} required placeholder="Enter your email" type='email' className="w-[100%] p-2 "></input>
                         </div>
                         <div className="px-4 pt-1">
                             <label htmlFor='subject' className="block text-white font-mono">Subject:</label>
-                            <input id='subject' name='subject' value={formData.subject} onChange={handleFormChange} required placeholder="Subject line" type='text' className="w-[100%] p-2 rounded-xl"></input>
+                            <input id='subject' name='subject' value={formData.subject} onChange={handleFormChange} required placeholder="Subject line" type='text' className="w-[100%] p-2"></input>
                         </div>
                         <div className="px-4 pt-1">
                             <label htmlFor='message' className="block text-white font-mono">Message:</label>
-                            <textarea id='message' name='message' value={formData.message} onChange={handleFormChange} required placeholder="Message contents" rows='4' cols='50' className="w-[100%] p-2 rounded-xl"></textarea>
+                            <textarea id='message' name='message' value={formData.message} onChange={handleFormChange} required placeholder="Message contents" rows='4' cols='50' className="w-[100%] p-2"></textarea>
                         </div>
-                        <button type='submit' className="p-4 px-20 bg-white mt-4 mx-auto rounded-xl w-[25% transition-all ease-in-out duration-700">
+                        <button type='submit' className="p-4 px-20 bg-white mt-4 mx-auto w-[25% transition-all ease-in-out duration-700">
                             {   sendingIcon ?
                                 <FaSpinner className="animate-spin"/>
                                 :
@@ -107,7 +107,7 @@ export default function ContactPage() {
                 </div>
             </div>
         {/* right contact info */}
-            <div className="w-[100] bg-white lg:rounded-3xl lg:m-auto z-5">
+            <div className="w-[100] bg-white lg:m-auto z-5">
                 {/* Info Container */}
                 <div className="p-4 lg:p-8 h-[50vh] lg:h-[100%] w-[100%] m-auto z-6">
                     <h1 className="text-2xl px-4 mb-4 lg:mb-4 text-slate-900 text-center font-bold font-mono">Or contact me via:</h1>

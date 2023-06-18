@@ -2,16 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --main-bg-color: #06080e;
+  --primary-txt-color: #dee3f2;
+  --primary-btn-color: #354982;
+  --primary-btn-hover: #35498250;
+  --secondary-btn-color: #101628;
+  --accent-color: #3d5394;
+  --card-color: #06080e90;
+}
+
 body {
   /* background: #456573; */
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(69, 101, 115,1)'/%3E%3Cpath d='M-20 31l20-20l20 20l20-20l20 20l20-20l20 20v-2l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9l20-20l20 20l20-20l20 20l20-20l20 20v-2l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 71l20-20l20 20l20-20l20 20l20-20l20 20v-2l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(26, 32, 44,1)'/%3E%3Cpath d='M20.5 0l20 20l-20 20l20 20l-20 20l20 20l-20 20h-1l20-20l-20-20l20-20l-20-20l20-20l-20-20zM-19.5 0l20 20l-20 20l20 20l-20 20l20 20l-20 20h-1l20-20l-20-20l20-20l-20-20l20-20l-20-20zM60.5 0l20 20l-20 20l20 20l-20 20l20 20l-20 20h-1l20-20l-20-20l20-20l-20-20l20-20l-20-20z ' fill='rgba(236, 201, 75,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E ");
-  backdrop-filter: blur(8px);
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%25' width='100%25'%3E%3Cdefs%3E%3Cpattern id='doodad' width='40' height='40' viewBox='0 0 40 40' patternUnits='userSpaceOnUse' patternTransform='rotate(135)'%3E%3Crect width='100%25' height='100%25' fill='rgba(69, 101, 115,1)'/%3E%3Cpath d='M-20 31l20-20l20 20l20-20l20 20l20-20l20 20v-2l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20-9l20-20l20 20l20-20l20 20l20-20l20 20v-2l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20zM-20 71l20-20l20 20l20-20l20 20l20-20l20 20v-2l-20-20l-20 20l-20-20l-20 20l-20-20l-20 20z ' fill='rgba(26, 32, 44,1)'/%3E%3Cpath d='M20.5 0l20 20l-20 20l20 20l-20 20l20 20l-20 20h-1l20-20l-20-20l20-20l-20-20l20-20l-20-20zM-19.5 0l20 20l-20 20l20 20l-20 20l20 20l-20 20h-1l20-20l-20-20l20-20l-20-20l20-20l-20-20zM60.5 0l20 20l-20 20l20 20l-20 20l20 20l-20 20h-1l20-20l-20-20l20-20l-20-20l20-20l-20-20z ' fill='rgba(236, 201, 75,1)'/%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23doodad)' height='200%25' width='200%25'/%3E%3C/svg%3E "); */
+  background-color: var(--main-bg-color);
   height: 100vh;
   height: 100svh;
 }
 
 .nav-button {
-  @apply p-4 font-mono transition-all ease-in-out duration-700 text-white hover:bg-[#62929E] hover:font-bold active:scale-125;
+  @apply p-4 font-mono transition-all ease-in-out duration-700 hover:font-bold active:scale-125;
 }
 
 ::placeholder {
@@ -19,12 +29,12 @@ body {
 }
 
 .swiper-button-next {
-  color: #62929E!important;
+  color: var(--primary-btn-color)!important;
   display: none;
 }
 
 .swiper-button-prev {
-  color: #62929E !important;
+  color: var(--primary-btn-color)!important;
   display: none;
   
 }
@@ -33,4 +43,30 @@ body {
 }
 .swiper-button-prev:hover {
   display: block;
+}
+
+.primary-text {
+  color: var(--primary-txt-color);
+}
+
+.primary-button {
+  background-color: var(--primary-btn-color);
+}
+
+.hover-accent:hover {
+  background-color: var(--primary-btn-color);
+}
+
+.secondary-button {
+  background-color: var(--secondary-btn-color);
+}
+
+.accent {
+  background-color: var(--accent-color);
+}
+
+@screen lg {
+  .card {
+    background-color: var(--card-color)
+  }
 }

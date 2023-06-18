@@ -24,8 +24,8 @@ export default function Home() {
     {/* Welcome Blurb */}
     <div className='flex drop-shadow-2xl lg:h-[100%] h-[30vh]'>
       <div className='m-auto group'>
-        <h1 className='text-center text-white lg:text-3xl sm:text-3xl text-xl font-mono'><span className='inline-block transition ease-in-out duration-700 group-hover:scale-125'>Hey! 👋</span> I'm Kainoa Borges</h1>
-        <h2 className='text-center text-white lg:text-xl sm:text-xl text-md pt-4 font-mono'>Software Developer based in Denver, CO</h2>
+        <h1 className='text-center primary-text lg:text-3xl sm:text-3xl text-xl font-mono'><span className='inline-block transition ease-in-out duration-700 group-hover:scale-125'>Hey! 👋</span> I'm Kainoa Borges</h1>
+        <h2 className='text-center primary-text lg:text-xl sm:text-xl text-md pt-4 font-mono'>Software Developer based in Denver, CO</h2>
       </div>
     </div>
     {/* Carousel Div */}
