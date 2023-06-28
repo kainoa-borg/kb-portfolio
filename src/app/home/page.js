@@ -16,6 +16,7 @@ export default function Home() {
   const foodForwardPreview = require('../../images/food-forward-preview.png');
   const hackerNewsClonePreview = require('../../images/hacker-news-clone-preview.png');
   const raytracerPreview = require('../../images/ray-tracer-preview.png');
+  const superSorterPreview = require('../../images/super-sorter-preview.png')
 
   return (
   // main div
@@ -33,6 +34,7 @@ export default function Home() {
       <div className='lg:h-[100%] h-[70vh]'>
         <Swiper navigation={true} modules={[Navigation, Autoplay]} loop={true} autoplay={{delay: 5000, disableOnInteraction: true}} className='h-[100%]'>
           <SwiperSlide><Image className='object-cover object-top h-[100%] w-[100%]' src={andreaSitePreview}></Image></SwiperSlide>
+          <SwiperSlide><Image className='object-cover object-left-top h-[100%] w-[100%]' src={superSorterPreview}></Image></SwiperSlide>
           <SwiperSlide><Image className='object-cover object-left-top h-[100%] w-[100%]' src={foodForwardPreview}></Image></SwiperSlide>
           <SwiperSlide><Image className='object-cover object-left-top h-[100%] w-[100%]' src={hackerNewsClonePreview}></Image></SwiperSlide>
           <SwiperSlide><Image className='object-cover object-top h-[100%] w-[100%]' src={raytracerPreview}></Image></SwiperSlide>
