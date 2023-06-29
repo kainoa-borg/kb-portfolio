@@ -51,10 +51,10 @@ export default function ProjectsPage() {
                 <SwiperSlide>
                     {/* <Image className='object-cover object-left-top lg:h-[100%] h-[60%] w-[100%]' src={speedrunIOPreview}></Image> */}
                     {
-                        windowWidth < 400 ?
+                        windowWidth < 450 ?
                         <Image className='object-cover lg:h-[100%] h-[60%] w-[100%]' src={speedrunIOPreviewMobile}></Image>
                         :
-                        <Image className='object-cover object-top h-[100%] w-[100%]' src={speedrunIOPreview}></Image>
+                        <Image className='object-cover object-top lg:h-[100%] h-[60%] w-[100%]' src={speedrunIOPreview}></Image>
                     }
                     <div className='absolute flex flex-col lg:backdrop-blur-xl p-1 items-center justify-center lg:h-[30%] h-[40%] lg:w-[30%] w-[80%] md:px-10 top-[80%] right-[50%] translate-x-[50%] translate-y-[-50%] card'>
                         <h2 className='text-2xl font-bold z-10 text-center primary-text font-mono'>Speedrun-io</h2>
