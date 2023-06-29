@@ -8,15 +8,26 @@ import React from 'react';
 // import Swiper and modules styles
 import 'swiper/swiper-bundle.css';
 import { Navigation, Autoplay } from 'swiper';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
 export default function ProjectsPage() {
 
     const andreaSitePreview = require('../../images/andrea-site-preview.png');
+    const andreaSitePreviewMobile = require('../../images/andrea-site-preview-mobile.png');
     const foodForwardPreview = require('../../images/food-forward-preview.png');
     const hackerNewsClonePreview = require('../../images/hacker-news-clone-preview.png');
+    const hackerNewsClonePreviewMobile = require('../../images/hacker-news-clone-preview-mobile.png');
     const raytracerPreview = require('../../images/ray-tracer-preview.png');
     const superSorterPreview = require('../../images/super-sorter-preview.png');
     const speedrunIOPreview = require('../../images/speedrun-io-preview.png');
+    const speedrunIOPreviewMobile = require('../../images/speedrun-io-preview-mobile.png');
+    const [windowWidth, setWindowWidth] = useState(0);
+
+    useEffect(() => {
+        console.log(window.innerWidth);
+        setWindowWidth(window.innerWidth);
+    }, [])
 
     return (
         <div className='flex pt-[8vh] h-[92vh]'>
@@ -38,7 +49,13 @@ export default function ProjectsPage() {
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <Image className='object-cover object-left-top lg:h-[100%] h-[60%] w-[100%]' src={speedrunIOPreview}></Image>
+                    {/* <Image className='object-cover object-left-top lg:h-[100%] h-[60%] w-[100%]' src={speedrunIOPreview}></Image> */}
+                    {
+                        windowWidth < 400 ?
+                        <Image className='object-cover lg:h-[100%] h-[60%] w-[100%]' src={speedrunIOPreviewMobile}></Image>
+                        :
+                        <Image className='object-cover object-top h-[100%] w-[100%]' src={speedrunIOPreview}></Image>
+                    }
                     <div className='absolute flex flex-col lg:backdrop-blur-xl p-1 items-center justify-center lg:h-[30%] h-[40%] lg:w-[30%] w-[80%] md:px-10 top-[80%] right-[50%] translate-x-[50%] translate-y-[-50%] card'>
                         <h2 className='text-2xl font-bold z-10 text-center primary-text font-mono'>Speedrun-io</h2>
                         <h2 className='text-l z-10 text-center primary-text font-mono'>Speedrun info web-app using speedrun.com's public API</h2>
