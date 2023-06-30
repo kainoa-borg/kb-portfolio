@@ -44,21 +44,11 @@ export default function Home() {
       <div className='lg:h-[100%] h-[70vh]'>
         <Swiper navigation={true} modules={[Navigation, Autoplay]} loop={true} autoplay={{delay: 5000, disableOnInteraction: true}} className='h-[100%]'>
           <SwiperSlide>
-            {
-              windowWidth < 400 ? 
-              <Image className='object-cover object-top h-[100%] w-[100%]' src={andreaSitePreviewMobile}></Image>
-              :
-              <Image className='object-cover object-top h-[100%] w-[100%]' src={andreaSitePreview}></Image>
-            }
+            <Image className='object-cover object-top h-[100%] w-[100%]' src={andreaSitePreview}></Image>
           </SwiperSlide>
           <SwiperSlide><Image className='object-cover object-left-top h-[100%] w-[100%]' src={superSorterPreview}></Image></SwiperSlide>
           <SwiperSlide>
-            {
-              windowWidth < 400 ?
-              <Image className='object-cover object-[0% 50%] h-[100%] w-[100%]' src={speedrunIOPreviewMobile}></Image>
-              :
-              <Image className='object-cover object-top h-[100%] w-[100%]' src={speedrunIOPreview}></Image>
-            }
+            <Image className='object-cover object-top h-[100%] w-[100%]' src={speedrunIOPreview}></Image>
           </SwiperSlide>
           <SwiperSlide><Image className='object-cover object-left-top h-[100%] w-[100%]' src={foodForwardPreview}></Image></SwiperSlide>
           <SwiperSlide><Image className='object-cover object-left-top h-[100%] w-[100%]' src={hackerNewsClonePreview}></Image></SwiperSlide>

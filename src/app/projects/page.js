@@ -57,7 +57,7 @@ export default function ProjectsPage() {
                         <Image className='object-cover object-top lg:h-[100%] h-[60%] w-[100%]' src={speedrunIOPreview}></Image>
                     }
                     <div className='absolute flex flex-col lg:backdrop-blur-xl p-1 items-center justify-center lg:h-[30%] h-[40%] lg:w-[30%] w-[80%] md:px-10 top-[80%] right-[50%] translate-x-[50%] translate-y-[-50%] card'>
-                        <h2 className='text-2xl font-bold z-10 text-center primary-text font-mono'>Speedrun-io</h2>
+                        <h2 className='text-2xl font-bold z-10 text-center primary-text font-mono'>Speedrun-IO</h2>
                         <h2 className='text-l z-10 text-center primary-text font-mono'>Speedrun info web-app using speedrun.com's public API</h2>
                         <a className='p-4 mt-3 mx-auto text-center primary-text primary-button font-mono transition ease-in-out' href='https://kainoa-borg.github.io/speedrun-io'>Explore</a>
                     </div>
